@@ -25,6 +25,7 @@
           <span class="stat-value" id="solved">0</span>
           <span class="stat-label">✅ solved</span>
         </div>
+        <button id="statsBtn" class="ghost-btn">📊 Stats</button>
         <button id="historyBtn" class="ghost-btn">📜 History</button>
       </div>
     </header>
@@ -72,6 +73,25 @@
         </div>
       </section>
 
+      <!-- Practice / category filter row -->
+      <div class="practice-row card">
+        <div class="practice-head">
+          <span class="practice-label">🎯 Practice a category</span>
+          <span class="practice-hint">Pick a focus area and get a problem on demand — separate from your daily challenge.</span>
+        </div>
+        <div class="practice-controls">
+          <select id="categorySelect" class="category-select">
+            <option value="all">🎲 Surprise me (any category)</option>
+            <option value="everyday">🌍 Everyday</option>
+            <option value="logic">🧩 Logic</option>
+            <option value="system-design">🏗️ System Design</option>
+            <option value="estimation">📊 Estimation</option>
+            <option value="creative">💡 Creative</option>
+          </select>
+          <button id="practiceBtn" class="secondary-btn">▶ Get practice problem</button>
+        </div>
+      </div>
+
       <div class="bonus-row">
         <button id="bonusBtn" class="ghost-btn">🎲 Give me a bonus problem</button>
       </div>
@@ -90,6 +110,17 @@
         <button id="closeHistory" class="ghost-btn">✕</button>
       </div>
       <div id="historyList" class="history-list"></div>
+    </div>
+  </div>
+
+  <!-- Stats drawer -->
+  <div id="statsOverlay" class="overlay hidden">
+    <div class="drawer drawer-wide">
+      <div class="drawer-head">
+        <h2>📊 Your progress</h2>
+        <button id="closeStats" class="ghost-btn">✕</button>
+      </div>
+      <div id="statsContent" class="stats-content"></div>
     </div>
   </div>
 

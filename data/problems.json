@@ -516,5 +516,425 @@
     ],
     "approach": "Run a pre-mortem: stand in the future, declare the project failed, and narrate the causes concretely (scope crept, a key person left, the integration nobody owned broke, users never adopted it). Assuming failure as fact frees people to voice doubts that optimism suppresses. Convert each imagined cause into a present-day mitigation or an early-warning signal. It's inversion applied to planning — and it surfaces risks a normal 'what could go wrong?' rarely does.",
     "reflection": "Prospective hindsight (the pre-mortem) bypasses optimism bias by treating failure as given. Imagining failure vividly reveals risks that forward, hopeful planning hides."
+  },
+  {
+    "id": "ev-11",
+    "category": "everyday",
+    "difficulty": 1,
+    "title": "The Overflowing Inbox",
+    "prompt": "You return from a two-week vacation to 400 unread emails. Your colleagues are waiting on responses, your manager sent three 'URGENT' notes, and there are newsletters you never asked for. How do you systematically triage this without missing anything critical or spending all day at it?",
+    "hints": [
+      "Urgency and importance are not the same thing — sort on the right axis.",
+      "Who sent it often matters more than the subject line.",
+      "Batch similar work (reading, replying, deleting) rather than handling each email in isolation."
+    ],
+    "approach": "Use a two-pass triage: first, sort by sender and age rather than reading each subject. Identify your manager, key colleagues, and clients — read only those first (the critical 10–15%). Mark everything else as 'read' or archive it; newsletters go straight to delete/unsubscribe. Second pass: respond to actionable items in batches (all quick replies, all longer replies) rather than toggling between reading and writing. Set a 'zero-inbox' target not by reading everything but by triaging everything — most of 400 emails need no action at all.",
+    "reflection": "Triage on sender priority, not recency. Batching similar tasks halves context-switching cost. Most email volume is noise — your job is to identify the signal quickly."
+  },
+  {
+    "id": "ev-12",
+    "category": "everyday",
+    "difficulty": 1,
+    "title": "The Reluctant Dinner Host",
+    "prompt": "You've agreed to cook dinner for six guests in three days. You've rarely hosted this many people at once, your kitchen is small, and you have no idea what one guest is allergic to. You want the evening to feel relaxed, not chaotic. How do you plan it?",
+    "hints": [
+      "Collect constraints before you plan the menu, not after.",
+      "The meal timeline matters as much as the recipe.",
+      "Reduce day-of cooking by shifting work earlier in the week."
+    ],
+    "approach": "Gather constraints first: send a quick message asking about allergies/dietary needs before picking the menu, not after. Choose a menu with a 80% prep-ahead ratio — braises, casseroles, assembled salads — so the day-of work is reheating and finishing. Write a reverse timeline from 'guests arrive at 7pm' backwards: what needs to be oven-ready at what time, what prep can be done Tuesday and Wednesday. A small kitchen is less stressful with two courses done and in the fridge than with three recipes in progress simultaneously.",
+    "reflection": "Front-load information gathering (constraints) and preparation work (mise en place). A timeline anchored to the finish line prevents the cascade of simultaneous crises."
+  },
+  {
+    "id": "ev-13",
+    "category": "everyday",
+    "difficulty": 2,
+    "title": "Navigating a Difficult Conversation",
+    "prompt": "A close friend has started canceling plans repeatedly at the last minute. It's been happening for six weeks and you're starting to resent it, but you don't want to lose the friendship. How do you approach the conversation to actually change things without damaging the relationship?",
+    "hints": [
+      "Describe observable behavior, not character judgments.",
+      "The goal is understanding and a changed pattern, not winning an argument.",
+      "Come with a request, not just a complaint."
+    ],
+    "approach": "Use the structure: observation → impact → request. Start with observable facts only ('you've canceled our last five plans, often same-day'), then share the personal impact ('I feel like our time together isn't a priority, and I've stopped counting on it'), then make a concrete, forward-looking request ('can we either commit to plans we're both certain about, or be honest earlier?'). Avoid 'you always' and motive-attribution ('you don't care'). Leave space for their perspective — there may be something going on you don't know about. The goal is a changed pattern, not an apology.",
+    "reflection": "In difficult conversations, observation + impact + request is more productive than judgment + complaint. Separate behavior from character, and always come with a forward-looking ask."
+  },
+  {
+    "id": "ev-14",
+    "category": "everyday",
+    "difficulty": 2,
+    "title": "The Urgent but Unimportant",
+    "prompt": "Your day is constantly hijacked by 'urgent' requests — quick questions on Slack, ad-hoc meetings, a colleague who walks over every hour. You know your most important work requires two-hour focus blocks, but you haven't had one this week. How do you reclaim your time without burning bridges?",
+    "hints": [
+      "Interruptions are a systems problem, not just an individual willpower problem.",
+      "Making yourself hard to interrupt is different from being unresponsive.",
+      "Expectation-setting is a gift to the people who interrupt you, not just to yourself."
+    ],
+    "approach": "Redesign the system, don't just try harder. Block 'deep work' time on your calendar as recurring meetings with yourself and mark them busy — people schedule around visible blocks. Communicate a response SLA ('I batch Slack replies at 11am and 4pm') so interruptors know when to expect you — most 'urgent' requests can wait 90 minutes. Identify the handful of people whose interruptions you do want to be available for, and create a direct channel for them. Turn ad-hoc walk-overs into brief scheduled check-ins ('I have a standing 15 min slot at 2pm; let's use that').",
+    "reflection": "Deep work requires structural protection, not just intent. The best way to minimize urgent-but-unimportant interruptions is to design a visible, predictable availability signal — that respects others' needs while protecting yours."
+  },
+  {
+    "id": "ev-15",
+    "category": "everyday",
+    "difficulty": 3,
+    "title": "The Aging Parent Dilemma",
+    "prompt": "Your parent (75, lives alone 200 miles away) has had two minor falls. They refuse to move closer or consider assisted living and dismiss concerns. You're worried but don't want to override their autonomy. You have two siblings who disagree on what to do. How do you make a decision the whole family can live with?",
+    "hints": [
+      "Separate what your parent wants from what they need — and respect both.",
+      "Sibling disagreement about the solution often masks shared underlying worry.",
+      "Start with the smallest interventions before escalating."
+    ],
+    "approach": "Start with facts, not conclusions: get an objective safety assessment (a geriatric care manager or GP can assess fall risk and cognitive status) so decisions are grounded in evidence, not anxiety. Engage your parent as a partner: 'We're worried and want to help — what would you be willing to try first?' Offer graduated options (emergency alert pendant → home modification → weekly check-in from a neighbor) rather than jumping to the most disruptive option. Use a family meeting to align siblings on shared goals ('we all want them safe and happy') before debating solutions — disagreements often dissolve once the goal is explicit.",
+    "reflection": "Autonomy and safety are both real values. Start with the least-invasive intervention that meaningfully reduces risk. A shared goal statement dissolves surface disagreements and makes collaborative decisions easier."
+  },
+  {
+    "id": "ev-16",
+    "category": "everyday",
+    "difficulty": 3,
+    "title": "The Zero-Budget Side Project",
+    "prompt": "You have an idea for a side project — an app, a product, a community — but no spare money, no co-founder, and limited time (a few hours a week). Six months later, most side projects die. Design a personal operating model that gives this one the best chance of survival and growth on zero budget.",
+    "hints": [
+      "What kills side projects is usually not lack of skill but lack of momentum.",
+      "The first version should validate the core assumption, not build the full vision.",
+      "External commitment changes the probability of follow-through."
+    ],
+    "approach": "Start with the riskiest assumption: don't build — interview 5 potential users in week one to validate there's a problem worth solving. If validated, build the smallest version that tests the core loop (a manual process, a landing page, a spreadsheet). Timebox each phase (2 weeks) to prevent perfectionism spirals. Create external accountability (a weekly written update to a single person, a public build-log) — external commitment dramatically increases follow-through. Ruthlessly cut scope: the graveyard of side projects is full of version 1.0s that tried to do everything.",
+    "reflection": "Side projects die from unclear assumptions and no momentum. Validate first, build a tiny working version next, and create external accountability to beat the natural entropy of optional work."
+  },
+  {
+    "id": "lo-09",
+    "category": "logic",
+    "difficulty": 1,
+    "title": "The Three Light Switches",
+    "prompt": "Three switches outside a room control three light bulbs inside (you can't see in from outside). You may flip any switches, then enter the room once. How do you determine which switch controls which bulb?",
+    "hints": [
+      "You only get one trip in — make it count by gathering multiple signals.",
+      "A light bulb has more than one detectable state.",
+      "Turn on one switch long enough to change something irreversible."
+    ],
+    "approach": "Turn switch A on for 10 minutes, then off. Turn switch B on and leave it. Enter the room: the bulb that is ON → switch B. The bulb that is OFF but warm → switch A. The bulb that is OFF and cold → switch C. The insight is using heat as a second information channel alongside 'on/off', letting you distinguish three states with a single entry.",
+    "reflection": "When a limited number of observations must distinguish many states, look for additional information channels (here: heat vs. light state). Every physical system has more observable dimensions than the obvious one."
+  },
+  {
+    "id": "lo-10",
+    "category": "logic",
+    "difficulty": 1,
+    "title": "The Fox, Chicken, and Grain",
+    "prompt": "You must ferry a fox, a chicken, and a sack of grain across a river in a boat that holds only you and one passenger. If left alone: the fox eats the chicken; the chicken eats the grain. How do you get all three across safely?",
+    "hints": [
+      "You can take things back as well as forward.",
+      "The constraint is what can't be left alone together — identify those pairs.",
+      "There are two valid solutions."
+    ],
+    "approach": "Take the chicken first. Return alone. Take the fox, but return with the chicken. Take the grain. Return alone. Take the chicken. Key insight: the return trip isn't wasted — it lets you 'swap' the dangerous pair. The chicken is the pivot because it's in conflict with both others. Alternatively you can bring the grain second, return with the chicken, and take the fox last.",
+    "reflection": "When moving items between states while respecting incompatibility constraints, the item in the most conflicts is usually the pivot. Don't treat the return trip as wasted — it's a resource."
+  },
+  {
+    "id": "lo-11",
+    "category": "logic",
+    "difficulty": 2,
+    "title": "The Counterfeit Among Five Coins",
+    "prompt": "Five coins, one of which is counterfeit and slightly heavier than the rest. Using a balance scale exactly twice, find the counterfeit coin.",
+    "hints": [
+      "With two weighings you can distinguish up to 9 outcomes — more than enough for 5 coins.",
+      "The first weighing should not include all coins.",
+      "If the first weighing balances, where does that leave you?"
+    ],
+    "approach": "Weigh 2 coins against 2 others (leave 1 aside). If one side is heavier, weigh those 2 suspect coins against each other — the heavier one is counterfeit. If the first weighing balances, all 4 are real — the unweighed coin (the one set aside) is counterfeit. No second weighing needed in that case (or weigh it against a known real coin to confirm). The key is the 'set aside' coin and using balance → deduction rather than brute force.",
+    "reflection": "Design experiments so each outcome, including the null/balanced result, gives maximal information. The 'set aside' coin represents the hypothesis 'none of the weighed coins are guilty' — and balance proves it in one step."
+  },
+  {
+    "id": "lo-12",
+    "category": "logic",
+    "difficulty": 2,
+    "title": "The Monty Hall Problem",
+    "prompt": "You're on a game show with three doors. Behind one is a car, behind the other two are goats. You pick door 1. The host (who knows what's behind each door) opens door 3 to reveal a goat, and offers you a switch to door 2. Should you switch, stay, or does it not matter? Explain why.",
+    "hints": [
+      "The host's action is not random — they always reveal a goat and they know where the car is.",
+      "What was the probability of your initial pick being right? What does that leave for the other two doors?",
+      "Imagine 100 doors instead of 3 to make the intuition clearer."
+    ],
+    "approach": "You should always switch. Your initial door had a 1/3 chance of being correct. That means the other two doors collectively had a 2/3 chance. The host revealing a known goat doesn't change your door's probability — it merely concentrates the full 2/3 onto the remaining door. With 100 doors: you pick 1 (1% chance), the host opens 98 goat doors, leaving one other door — which now has a 99% chance of being correct. Switching wins 2/3 of the time.",
+    "reflection": "The host's action is constrained (always a goat, always from the unchosen doors). Conditional probability is about updating beliefs based on new information — and the information here isn't symmetric between your door and the other."
+  },
+  {
+    "id": "lo-13",
+    "category": "logic",
+    "difficulty": 3,
+    "title": "The Unexpected Hanging",
+    "prompt": "A judge tells a prisoner: 'You will be hanged on exactly one day next week (Mon–Fri), and you won't know which day until the morning of the execution.' The prisoner reasons: 'It can't be Friday — if I survived to Thursday night, I'd know it must be Friday. Since I'd know, it's not a surprise. And since Friday is ruled out, Thursday is now the last possible day, so by the same logic it's ruled out too…' and eliminates every day, concluding no hanging can happen. He is hanged on Wednesday, surprised. Where did his reasoning break down?",
+    "hints": [
+      "The prisoner applies induction backwards from Friday, but check whether each step truly relies on the previous.",
+      "Does 'I wouldn't be surprised on Thursday' require the Friday argument to hold?",
+      "What does 'surprise' actually require — uncertainty until the morning of, or absolute unpredictability?"
+    ],
+    "approach": "The prisoner's induction is flawed at step two: eliminating Thursday doesn't follow from eliminating Friday. To be surprised on Thursday, it's not necessary that Friday was already valid — you'd be surprised on Thursday if you didn't know on Wednesday night that the execution was on Thursday. The 'I'd know it's Thursday' reasoning assumes Friday remains on the table (giving him no Thursday reason to assume Thursday), but once Friday is struck, that anchor is gone. In practice, 'surprise' is epistemic uncertainty about the day, not a strict logical impossibility — and the judge's promise is coherent even if it resists full formalization.",
+    "reflection": "The paradox reveals that self-referential statements about knowledge are treacherous. Induction across epistemic states (what you'd 'know') is not the same as induction across facts. Edge-case logic that seems airtight can collapse when 'knowing' appears in the premise."
+  },
+  {
+    "id": "lo-14",
+    "category": "logic",
+    "difficulty": 3,
+    "title": "The Blue-Eyes Puzzle",
+    "prompt": "On an island, 100 people have blue eyes and 100 have brown eyes. No mirrors exist and no one is told their own eye color. The rule: if you know your eye color, you must leave the island the night you figure it out. Everyone is perfectly logical. A stranger arrives and announces, 'At least one of you has blue eyes.' Nobody knew this before. What happens, and when?",
+    "hints": [
+      "Start with just 1 blue-eyed person to build intuition, then 2, then 3.",
+      "The stranger's announcement adds new information even though everyone could already see many blue-eyed people.",
+      "What new knowledge does 'common knowledge' provide that individual knowledge doesn't?"
+    ],
+    "approach": "On night 100, all 100 blue-eyed people leave. Inductive reasoning: with 1 blue-eyed person, they see no blue eyes, hear 'at least one exists', and leave night 1. With 2: each sees 1, thinks 'if they're the only one, they'll leave night 1'— when they don't, each deduces they must also have blue eyes, and both leave night 2. With n: each blue-eyed person sees n-1 and waits to see if those n-1 leave on night n-1; when they don't, all n deduce they have blue eyes and leave night n. The stranger's announcement wasn't new factual information (everyone saw many blue eyes) — but it created common knowledge: everyone now knows that everyone knows that everyone knows... there's at least one. That shared meta-knowledge enables the induction.",
+    "reflection": "Individual knowledge and common knowledge are different. A public announcement that 'everyone knows' transforms shared private knowledge into a foundation for coordinated reasoning. The stranger's statement doesn't add a new fact — it elevates a fact into the common knowledge hierarchy that inductive coordination requires."
+  },
+  {
+    "id": "sd-08",
+    "category": "system-design",
+    "difficulty": 1,
+    "title": "Design a Simple Task Queue",
+    "prompt": "You need to offload slow work (sending emails, resizing images, generating reports) from your web server so users aren't left waiting. Sketch the minimal architecture of a background task queue: what components do you need, how does a task get created, processed, and tracked?",
+    "hints": [
+      "A queue decouples the 'enqueue task' from 'execute task' steps.",
+      "What does a worker need to know to process a task?",
+      "How does the web server know the task completed?"
+    ],
+    "approach": "Minimum viable queue: (1) a producer — the web server writes a task record (type, payload, status=pending) to a shared store (DB table or a message broker like Redis/RabbitMQ); (2) a consumer — one or more worker processes poll or subscribe, pick up pending tasks, execute them, and update status to done/failed; (3) a result store — the updated record or a separate results table. The user can poll an endpoint for task status or receive a webhook/email on completion. Key properties: tasks survive worker crashes (persisted), can be retried on failure, and workers scale independently of the web server.",
+    "reflection": "A queue is an asynchronous coupling point: the enqueuer and worker run at their own pace. Durable persistence + a status field turns a one-shot call into a resumable, trackable unit of work."
+  },
+  {
+    "id": "sd-09",
+    "category": "system-design",
+    "difficulty": 1,
+    "title": "Design a Leaderboard",
+    "prompt": "Your game or app needs a real-time leaderboard: users submit scores, and at any moment you can request the top 10 players. Scores update frequently. Design the data model and query strategy so reads are fast and writes don't kill your database.",
+    "hints": [
+      "Which operations happen more frequently — writes or reads?",
+      "A sorted data structure could answer 'top N' in constant time.",
+      "Should the leaderboard be perfectly real-time or is a few-second lag acceptable?"
+    ],
+    "approach": "Use a sorted set (e.g., Redis ZADD/ZREVRANGE): each score update is O(log N), and top-N retrieval is O(log N + K). For larger scale, batch score updates asynchronously and update the sorted set every few seconds — a brief lag is usually acceptable and avoids write storms. Store full user details in a separate users table; the leaderboard only maps userId → score. Cache the top-10 result for a few seconds to absorb read spikes. For a relational-only store, index on score, limit reads to 10, and use a materialized view refreshed periodically.",
+    "reflection": "Match the data structure to the dominant query (sorted-set for top-N lookup). Decide upfront whether consistency matters down to the millisecond — a brief lag usually unlocks massive write-throughput improvements."
+  },
+  {
+    "id": "sd-10",
+    "category": "system-design",
+    "difficulty": 2,
+    "title": "Design a Collaborative Document Editor",
+    "prompt": "You want to build a shared document editor where multiple users can type simultaneously and see each other's changes in real time (think Google Docs). What are the core technical challenges, and how would you approach them?",
+    "hints": [
+      "What happens when two users edit the same character position at the same time?",
+      "How does the server learn about changes without polling?",
+      "A simple 'last write wins' strategy destroys concurrent edits — what else exists?"
+    ],
+    "approach": "Core challenges: (1) Conflict resolution — use Operational Transformation (OT) or CRDTs so concurrent edits merge correctly without one overwriting the other. (2) Real-time sync — WebSockets let the server push changes instantly rather than clients polling. (3) Presence — track cursor positions and user identity in real time via the same channel. Architecture: the server applies and serializes all incoming operations via OT, broadcasting the canonical version. The client applies operations optimistically for snappy UX and reconciles on server response. Persist a revision log, not just the current document, to enable history and conflict playback.",
+    "reflection": "Collaborative editing is a distributed state-sync problem. 'Last write wins' fails because it loses information; OT/CRDTs solve by making every operation composable and order-independent. Real-time push (WebSockets) is necessary when polling latency would visibly degrade the experience."
+  },
+  {
+    "id": "sd-11",
+    "category": "system-design",
+    "difficulty": 2,
+    "title": "Design a Metrics and Alerting Pipeline",
+    "prompt": "Your production system emits thousands of metric data points per second (CPU, error rates, latency). You need to store them, query recent trends, and page an on-call engineer when something crosses a threshold. How do you design the pipeline?",
+    "hints": [
+      "Storing every raw data point forever is too expensive — how do you downsample?",
+      "Where is the threshold evaluation done, and how often?",
+      "Alert fatigue is a real problem — how do you prevent too many alerts?"
+    ],
+    "approach": "Pipeline: (1) Ingestion — agents emit metrics to a collector (e.g., StatsD, Prometheus scrape) which aggregates raw points into time-bucketed rollups (1-second raw, 1-minute averages, 1-hour summaries) in a time-series DB — this controls storage costs. (2) Query — a time-series DB (InfluxDB, Prometheus, or a columnar store) makes range and aggregation queries fast. (3) Alerting — an alert engine evaluates rules (error_rate > 5% for 5 min) on rollup data, deduplicates and rate-limits alerts to prevent storms, and routes to PagerDuty/email. Alert grouping and a 'firing window' (n minutes to avoid single-spike noise) are essential for quality signals.",
+    "reflection": "Time-series workloads have three distinct concerns: write throughput (aggregation helps), storage cost (rollups and retention policies), and signal quality (alert deduplication prevents noise). Each requires a separate design decision."
+  },
+  {
+    "id": "sd-12",
+    "category": "system-design",
+    "difficulty": 3,
+    "title": "Design a Distributed Key-Value Store",
+    "prompt": "Build a simple distributed key-value store that can handle millions of keys, survives single-node failures, and serves reads in under 10ms. Sketch the architecture: data model, partitioning, replication, and what consistency trade-offs you're making.",
+    "hints": [
+      "One machine can't hold everything — how do you partition the key space across nodes?",
+      "Replication means multiple copies — which one is authoritative on a read?",
+      "The CAP theorem says you can't have all three of consistency, availability, and partition tolerance."
+    ],
+    "approach": "Partition via consistent hashing: each key maps to a hash ring position and is assigned to the nearest node — adding/removing nodes only rebalances a fraction of keys. Replicate each key to N nodes (e.g., 3) with a replication factor. Reads and writes use quorum (R + W > N ensures consistency), or you can relax to eventual consistency for higher availability. Each node stores a local hash map or LSM-tree for fast lookups. A gossip protocol propagates cluster membership changes. Trade-offs: strong consistency (quorum) increases latency; eventual consistency (async replication) is faster but risks stale reads. Choose based on the use case.",
+    "reflection": "Distributed systems force explicit trade-offs between consistency, availability, and latency. Consistent hashing bounds the blast radius of rebalancing. Quorum-based reads/writes let you tune the consistency-vs-availability dial per operation."
+  },
+  {
+    "id": "sd-13",
+    "category": "system-design",
+    "difficulty": 3,
+    "title": "Design an Offline-First Mobile App",
+    "prompt": "You're building a note-taking app for mobile. Users need to read and write notes even when offline, and changes should sync seamlessly when they reconnect — including edits made on two devices simultaneously. How do you design the sync layer?",
+    "hints": [
+      "What do you store locally so the app works with no internet?",
+      "How do you detect and merge conflicting edits made on different devices while offline?",
+      "A change log (not just the current state) is often key to reconciliation."
+    ],
+    "approach": "Store a full local copy of user data in a local DB (SQLite, Realm). Every write is logged locally with a timestamp and a vector clock (or a monotonic sequence per device). On reconnect, sync the log of deltas — not the whole state — to the server. The server applies a merge strategy: for non-conflicting edits (different notes), apply all; for conflicting edits (same note changed on two devices), use a CRDT text type, a 'last write wins' per user preference, or surface a conflict UI prompt. The local-first design means the app is always fast (reads/writes hit local DB); sync is async background work, not a blocking gate.",
+    "reflection": "Offline-first means local DB is primary; cloud is backup + sync. Log deltas rather than snapshots so merging is fine-grained. Conflict resolution policy (CRDT, LWW, or user prompt) must be chosen consciously — there's no universal right answer."
+  },
+  {
+    "id": "es-06",
+    "category": "estimation",
+    "difficulty": 1,
+    "title": "How Many Heartbeats in a Lifetime?",
+    "prompt": "Estimate the total number of times a human heart beats over an average lifetime. State your assumptions and round to the nearest order of magnitude.",
+    "hints": [
+      "You need two numbers: average heart rate and average lifespan.",
+      "Convert everything to the same unit before multiplying.",
+      "Is the answer closer to millions, billions, or trillions?"
+    ],
+    "approach": "Average resting heart rate: ~70 bpm. Lifespan: ~75 years. 70 beats/min × 60 min/hr × 24 hr/day × 365 days/year × 75 years = 70 × 60 × 24 × 365 × 75 ≈ 70 × 525,600 min/year × 75 ≈ 2.76 billion beats. The answer is roughly 2–3 billion beats — on the order of 10^9. Animals with faster heart rates (mice: ~500 bpm) live far fewer years, and their lifetime heart-beat total is surprisingly similar — a possible hint at biological limits.",
+    "reflection": "Large-number estimation becomes tractable when broken into a product of everyday quantities. The surprising constancy across species (of lifetime heartbeats) is a bonus insight that emerges from doing the arithmetic carefully."
+  },
+  {
+    "id": "es-07",
+    "category": "estimation",
+    "difficulty": 1,
+    "title": "How Many Steps to Walk a Marathon?",
+    "prompt": "Estimate how many steps it takes for an average adult to walk a marathon (42.195 km). No lookup — reason from your own walking experience.",
+    "hints": [
+      "You need to estimate your stride length.",
+      "A 'step' and a 'stride' are different — decide which you mean.",
+      "Cross-check: does your estimated total feel plausible for a full day of walking?"
+    ],
+    "approach": "Average adult step length: ~75–80 cm (one step = one foot touching down). 42,195 m ÷ 0.78 m/step ≈ 54,000 steps. Running steps are shorter (~1–1.2m for two steps = a stride), so a runner doing it faster might take ~35,000 steps. Order of magnitude: about 50,000 steps, which matches pedometer data from marathon finishers. A typical person's daily count is ~7,000–10,000 steps, so a marathon is roughly 5–7 average walking days.",
+    "reflection": "Ground your estimate in a physical quantity you've experienced (your step length). Cross-checking against a familiar reference (daily step count) catches errors and builds intuition calibration."
+  },
+  {
+    "id": "es-08",
+    "category": "estimation",
+    "difficulty": 2,
+    "title": "How Many Transactions Per Second Does Visa Handle?",
+    "prompt": "Estimate how many credit/debit card transactions Visa processes per second on a typical day. Reason from global consumer behavior, not from any figure you may have seen.",
+    "hints": [
+      "Start with how many people globally use a card for purchases.",
+      "How often does the average cardholder transact per day?",
+      "Don't forget this is just Visa — what fraction of global card spend does it hold?"
+    ],
+    "approach": "Global population ~8B, maybe 2B have and use a debit/credit card regularly. Each cardholder averages ~1 transaction per day on a typical day. That's 2B transactions/day globally across all card networks. Visa has roughly 40–50% market share → ~800M–1B transactions/day. Divide by 86,400 seconds → ~10,000–12,000 transactions per second. Visa's publicly stated peak capacity is ~65,000 tps with typical daily averages around 5,000–10,000 — our estimate lands in the right band.",
+    "reflection": "Market-share reasoning lets you slice a global estimate down to one player. The 86,400 seconds/day conversion is a powerful normalizer for 'per second' rates that feel impossibly abstract."
+  },
+  {
+    "id": "es-09",
+    "category": "estimation",
+    "difficulty": 2,
+    "title": "The Commuter Train Car",
+    "prompt": "A city commuter train car is packed during rush hour. Estimate how many people are standing in the car. You may assume it's a standard subway car you've been on, or use typical dimensions.",
+    "hints": [
+      "Estimate the floor area of the car, then density.",
+      "A comfortable crowd vs. a truly packed subway car are very different densities.",
+      "Subtract area taken up by seats and poles."
+    ],
+    "approach": "Standard subway car: ~20m long × 2.5m wide = 50 m² floor area. Seats take ~35–40% of usable floor (two rows along sides + some facing seats). Remaining standing area: ~30 m². At rush-hour density (~4–5 people/m²) → ~120–150 standing passengers. Add seated passengers (say 40 seats) → total 160–190 people. Many systems report 120–200 passengers per car at crush load. State the density assumption explicitly — it's the sensitive input.",
+    "reflection": "Area × density is the workhorse formula for crowd estimates. The density figure (people per m²) is the uncertain factor — identifying it as the key sensitivity makes the estimate auditable and improvable."
+  },
+  {
+    "id": "es-10",
+    "category": "estimation",
+    "difficulty": 3,
+    "title": "Cost of One Hour of Downtime",
+    "prompt": "Your e-commerce site goes down for one hour during a normal weekday afternoon. Estimate the revenue loss. You don't know the site's actual revenue — build a model from reasonable assumptions and justify them.",
+    "hints": [
+      "Estimate annual revenue first, then distribute it across hours.",
+      "Not all hours are equal — weekday afternoon is not peak.",
+      "Don't forget indirect costs (customer trust, support load) even if they're harder to quantify."
+    ],
+    "approach": "A mid-sized e-commerce site might do $50M/year in revenue. That's ~$137k/day. Traffic is not uniform: weekday afternoons are moderate, say 60% of daily average → ~$82k for that 24h period. Normalize to an hour: $82k ÷ 24 ≈ $3,400/hour in direct lost sales. Add: support ticket surge (50 tickets × $20/ticket = $1,000), potential SLA penalties, and brand damage (hard to quantify, but non-zero). Total direct cost: ~$4,000–$8,000 for a site this size. For a $1B/year business, multiply by 20 (~$80k–$160k/hour) — as seen in Amazon's reported $13,000/minute figures.",
+    "reflection": "Model the revenue as a time-distributed flow, not a lump sum. Identify the shape of the distribution (time-of-day factor). Quantify even the secondary costs to make the full business case for reliability investment."
+  },
+  {
+    "id": "es-11",
+    "category": "estimation",
+    "difficulty": 3,
+    "title": "Weight of All Humans on Earth",
+    "prompt": "Estimate the total mass of all living humans on Earth. Then compare it to something surprising — what else weighs roughly as much?",
+    "hints": [
+      "Average human mass differs significantly by age group and region — pick a reasonable global average.",
+      "Multiply by world population.",
+      "Find a comparison that makes the number tangible."
+    ],
+    "approach": "World population: ~8 billion. Average human mass globally: ~60–65 kg (accounting for children, regional variation). Total: 8 × 10^9 × 62 kg ≈ 5 × 10^11 kg = 500 million metric tons. For comparison: Mount Everest masses roughly 800 billion tons of rock — humans weigh about 1/1600th of that. Or: a large oil supertanker holds ~300,000 tons, so all humans ≈ ~1,700 supertankers. A more surprising comparison: ants on Earth are estimated to weigh several times more than all humans combined, despite each ant weighing microscopically little.",
+    "reflection": "The comparison step turns a large abstract number into intuition. Choosing a surprising comparison (ants outweigh us) is both memorable and humbling — and it's exactly the kind of insight that sticks and sharpens your number sense."
+  },
+  {
+    "id": "cr-08",
+    "category": "creative",
+    "difficulty": 1,
+    "title": "The Six Thinking Hats",
+    "prompt": "Use Edward de Bono's Six Thinking Hats to analyze a decision you're facing: ⚪ facts, 🔴 emotions/intuition, ⚫ caution/risks, 🟡 optimism/benefits, 🟢 creative alternatives, 🔵 process/next steps. What does each hat reveal that you wouldn't have noticed just 'thinking normally'?",
+    "hints": [
+      "Wear one hat at a time — don't blend them. Each hat forces a single mode of thinking.",
+      "The black hat (risks) and yellow hat (benefits) are most powerful when kept strictly separate.",
+      "The green hat (creativity) is easiest to skip — don't."
+    ],
+    "approach": "The power of the hats is separation: normal 'thinking' blends evaluation with generation, emotion with data, criticism with optimism — and they cancel each other out. Wearing the red hat explicitly lets you name your gut reaction without needing to justify it. The green hat forces you to generate options even when you think the decision is made. The black hat's risk list — when done separately from yellow — is more complete because you're not unconsciously softening risks to match your optimism. Use the blue hat at the end to synthesize.",
+    "reflection": "Parallel thinking (all hats worn in sequence by everyone) beats adversarial debate: it separates the modes of thought that interfere with each other when mixed. The framework is a forcing function for thinking you'd otherwise skip."
+  },
+  {
+    "id": "cr-09",
+    "category": "creative",
+    "difficulty": 1,
+    "title": "A Day Without Screens",
+    "prompt": "Imagine your job and personal life for one full day with zero screen time — no phone, computer, TV. What breaks immediately? What becomes surprisingly easier? Use the constraint to identify both your digital dependencies and the things that technology is quietly making worse for you.",
+    "hints": [
+      "List 'what do I need a screen for today?' — which items are truly necessary vs habit?",
+      "What would fill the time and attention that screens usually absorb?",
+      "Notice which digital uses you'd miss most — those are probably the high-value ones."
+    ],
+    "approach": "First pass: inventory screen-dependent tasks (navigation, payment, work communication, alarm). Most are replaceable with analog substitutes or pre-planning (download maps, carry cash, write the day's plan on paper). What becomes easier: conversations (no phone glances), sleep (no late-screen stimulation), focus (no notification pull). What breaks: real-time work communication, navigation in an unfamiliar place. The exercise reveals that many screen uses are not necessity but habit — and that the attention economy fills any idle second you'd otherwise use for thinking.",
+    "reflection": "Voluntary constraints expose which dependencies are genuine needs vs habituated behaviors. The goal isn't to go screen-free permanently but to reclaim intentionality: use screens because you chose to, not because the habit is running you."
+  },
+  {
+    "id": "cr-10",
+    "category": "creative",
+    "difficulty": 2,
+    "title": "Redesign Onboarding",
+    "prompt": "Think of any product you use that has a frustrating or confusing first-use experience (an app, a service, a tool at work). Redesign the first 10 minutes from scratch — not just 'better UX' but by rethinking what the user actually needs to succeed and feel confident in those 10 minutes.",
+    "hints": [
+      "What does the user need to believe, know, and feel at the end of 10 minutes?",
+      "What's the first moment of genuine value — can you get there faster?",
+      "Onboarding often teaches features; should it teach outcomes instead?"
+    ],
+    "approach": "Start from the user's job-to-be-done, not the product's feature list. Identify the 'aha moment' — the instant users first feel the product's core value. Good onboarding shortens the path to that moment ruthlessly, removing every step before it that isn't strictly necessary. Ask: what do users need to believe at minute 10 (that they can do X, that it's worth the time, that they know enough to start)? Design backward from those beliefs. Replace 'feature tours' with a first real win: let them complete one meaningful task immediately, even a simple one, so success is felt, not promised.",
+    "reflection": "Onboarding is promise fulfillment: the user signed up for an outcome. The design question is 'what's the shortest path to the first taste of that outcome?' Feature tours delay value; early wins create commitment."
+  },
+  {
+    "id": "cr-11",
+    "category": "creative",
+    "difficulty": 2,
+    "title": "The Opposite User",
+    "prompt": "Pick a product or service you know well. Now imagine a fictional 'opposite user' — someone with completely different needs, constraints, or context (e.g., elderly vs. child, expert vs. first-timer, rural vs. urban, wealthy vs. budget-constrained). What would this opposite user need from the product? What do those requirements reveal about unexamined assumptions baked into the current design?",
+    "hints": [
+      "Who is the 'assumed user' this product was designed for? Make that assumption explicit.",
+      "What parts of the product break completely for your opposite user?",
+      "Can any of the 'opposite user' requirements improve the product for everyone?"
+    ],
+    "approach": "Identifying the 'default user assumption' in any product design is a powerful diagnostic. A banking app designed for a smartphone-native young professional breaks for an elderly user (small text, multi-step authentication, digital-only support). Mapping the opposite user's failure points reveals assumptions like 'users can read 9pt text,' 'users have fast internet,' 'users are comfortable with touch gestures.' Some fixes for the opposite user (larger text, single-step flows, phone-call fallback) improve the experience for everyone — this is the principle behind universal design.",
+    "reflection": "Every design encodes a 'default user.' Making that assumption explicit, then stress-testing it with the opposite user, is one of the most reliable ways to uncover blind spots. Universal design benefits everyone when it removes unnecessary complexity."
+  },
+  {
+    "id": "cr-12",
+    "category": "creative",
+    "difficulty": 3,
+    "title": "Design a Ritual",
+    "prompt": "Design a new personal or team ritual — a repeated, intentional practice — that produces a specific benefit (better focus, stronger team cohesion, reduced anxiety, clearer thinking, etc.). Make it concrete enough that someone could actually do it tomorrow, and explain why the ritual form (not just the activity) is part of its value.",
+    "hints": [
+      "A ritual differs from a habit in that it has explicit meaning and marking — what marks the start and end?",
+      "What's the minimal version that still produces the benefit?",
+      "How does the repetition and predictability of the ritual create its value?"
+    ],
+    "approach": "A useful personal ritual: a 5-minute 'shutdown ritual' at end of workday — write tomorrow's top 3 tasks, close all tabs, say 'shutdown complete' aloud. The ritual form matters: the verbal declaration signals to your brain that work is done (creating psychological distance), the written plan reduces evening anxiety about forgetting things, and the tab-closing is a physical manifestation of closure. The key is the clear start/end marker and the repetition that trains an automatic state change. For teams: a weekly 'wins + blockers' round-robin in the first 5 minutes of a meeting creates predictable psychological safety for surfacing problems early.",
+    "reflection": "Rituals encode meaning through repetition and deliberate marking. Their power is behavioral and psychological: they create predictable state transitions that habits alone (automated behaviors) don't. A ritual needs a clear trigger, a fixed form, and a meaningful end signal."
+  },
+  {
+    "id": "cr-13",
+    "category": "creative",
+    "difficulty": 3,
+    "title": "First Principles from Scratch",
+    "prompt": "Pick something in your life or work that you do 'because that's how it's done' — a meeting format, a document template, a workflow, a social convention. Strip it down to first principles: what is the actual goal? What's the simplest possible design that achieves that goal from scratch? What parts of the current version exist only because of historical inertia?",
+    "hints": [
+      "First principles reasoning means reasoning from fundamental truths, not by analogy from existing practice.",
+      "Ask 'what problem is this solving?' until you reach the bedrock.",
+      "The parts that survive first-principles scrutiny are the ones worth keeping."
+    ],
+    "approach": "Take the weekly status report: its bedrock goals are (1) inform stakeholders of progress and (2) surface blockers early. First-principles redesign: does it need to be weekly? Only if updates change weekly. Does it need to be a document? Only if async reading is required. Does it need full prose? No — bullet points per goal suffice. What's left after stripping inertia: a weekly three-bullet async update (done, doing, blocked) shared in a chat channel. Most of the original format existed because someone once used a formal report template, which was inherited without question. First principles removes those layers.",
+    "reflection": "First-principles reasoning isn't contrarianism — it's asking 'what are we actually trying to achieve?' and building from there. Most established practices contain 70% purpose and 30% accumulated inertia. The 30% is worth identifying and removing."
   }
 ]
