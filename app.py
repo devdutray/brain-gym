@@ -264,8 +264,8 @@ def api_stats():
     streak = compute_streak(list(completed.keys()))
     tier = difficulty_tier(total_solved)
 
-    by_category: dict = defaultdict(int)
-    by_difficulty: dict = defaultdict(int)
+    by_category: defaultdict[str, int] = defaultdict(int)
+    by_difficulty: defaultdict[str, int] = defaultdict(int)
     for pid in completed.values():
         prob = by_id.get(pid)
         if prob:
@@ -274,7 +274,7 @@ def api_stats():
 
     # Problems solved per ISO week (last 12 weeks)
     today = date.today()
-    week_counts: dict = defaultdict(int)
+    week_counts: defaultdict[str, int] = defaultdict(int)
     for day_str in completed:
         d = datetime.strptime(day_str, "%Y-%m-%d").date()
         iso = d.isocalendar()

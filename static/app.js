@@ -191,7 +191,8 @@ function svgBarChart(data, { width = 320, height = 100, barColor = "#6c8cff", la
     .map((d, i) => {
       if (i % Math.ceil(data.length / 6) !== 0) return "";
       const x = i * (barW + 4) + barW / 2;
-      const shortLabel = d.label.length > 6 ? d.label.slice(-5) : d.label;
+      // For ISO week strings (e.g. "2024-W01") show "W01"; for date strings show "MM-DD".
+      const shortLabel = d.label.includes("W") ? d.label.slice(-3) : d.label.slice(-5);
       return `<text x="${x}" y="${height - 4}" text-anchor="middle" font-size="9" fill="${labelColor}">${shortLabel}</text>`;
     })
     .join("");
@@ -212,6 +213,7 @@ function svgDonut(slices, { size = 120, colors } = {}) {
     const y2 = cy + r * Math.sin(angle);
     const ix1 = cx + innerR * Math.cos(angle);
     const iy1 = cy + innerR * Math.sin(angle);
+    // Inner arc is drawn backwards (end-angle → start-angle) to close the donut segment.
     const ix2 = cx + innerR * Math.cos(angle - sweep);
     const iy2 = cy + innerR * Math.sin(angle - sweep);
     const large = sweep > Math.PI ? 1 : 0;
