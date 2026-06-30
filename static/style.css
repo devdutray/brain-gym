@@ -413,7 +413,59 @@ footer {
 }
 
 @media (max-width: 560px) {
+  .app {
+    padding: 16px 14px 48px;
+  }
+
   .topbar { flex-direction: column; align-items: flex-start; }
+
+  .brand h1 { font-size: 22px; }
+  .logo { font-size: 34px; }
+
+  .stats {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .stat { min-width: 54px; }
+  .stat-value { font-size: 20px; }
+
+  #historyBtn { margin-left: auto; }
+
+  #problemTitle { font-size: 18px; }
+  .prompt { font-size: 15px; }
+
+  .card { padding: 18px 14px; }
+
+  .card-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  textarea {
+    min-height: 110px;
+    font-size: 16px; /* prevent iOS auto-zoom */
+  }
+
+  /* Ensure all buttons have a minimum 44 px tap target on mobile */
+  button {
+    min-height: 44px;
+    padding: 10px 16px;
+  }
+
   .reveal-controls { flex-direction: column; }
   .reveal-controls button { width: 100%; }
+
+  .answer-actions {
+    flex-wrap: wrap;
+  }
+
+  #saveBtn { width: 100%; }
+
+  .drawer {
+    width: 100vw;
+  }
+
+  .bonus-row button { width: 100%; }
 }

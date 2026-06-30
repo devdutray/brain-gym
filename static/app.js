@@ -1,6 +1,10 @@
 // Brain Gym front-end logic: fetch the daily problem, manage reveals,
-// save answers, mark complete, and show history. All state lives server-side
-// in data/progress.json; this script just talks to the small JSON API.
+// save answers, mark complete, and show history.
+//
+// Progress (streak, completed days, saved answers) is stored in browser
+// localStorage so it survives on any host — including free tiers that reset
+// the filesystem between deploys. The server APIs are still called for
+// local-dev compatibility but are treated as best-effort.
 
 const state = {
   problem: null,
@@ -15,6 +19,49 @@ async function api(path, options) {
   const res = await fetch(path, options);
   if (!res.ok) throw new Error(`Request failed: ${res.status}`);
   return res.json();
+}
+
+// ---------------------------------------------------------------------------
+// localStorage-backed progress store
+// ---------------------------------------------------------------------------
+const STORAGE_KEY = "brainGymProgress";
+
+function loadLocalProgress() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (_) { /* ignore parse errors */ }
+  return { completed: {}, answers: {}, history: [] };
+}
+
+function saveLocalProgress(progress) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+  } catch (_) { /* storage quota exceeded — ignore */ }
+}
+
+function computeLocalStreak(completedDates) {
+  if (!completedDates || !completedDates.length) return 0;
+  const days = new Set(completedDates);
+  const today = new Date();
+  const todayKey = today.toISOString().slice(0, 10);
+  const yesterday = new Date(today);
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yesterdayKey = yesterday.toISOString().slice(0, 10);
+
+  let cursor;
+  if (days.has(todayKey)) cursor = new Date(todayKey + "T00:00:00");
+  else if (days.has(yesterdayKey)) cursor = new Date(yesterdayKey + "T00:00:00");
+  else return 0;
+
+  let streak = 0;
+  while (true) {
+    const key = cursor.toISOString().slice(0, 10);
+    if (!days.has(key)) break;
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
 }
 
 function renderProblem(problem, { savedAnswer = "", completedToday = false } = {}) {
@@ -76,14 +123,20 @@ function showSolution() {
 
 async function saveAnswer() {
   if (!state.problem) return;
-  await api("/api/answer", {
+  const progress = loadLocalProgress();
+  progress.answers[state.problem.id] = el("answerBox").value;
+  saveLocalProgress(progress);
+
+  // Best-effort server sync for local dev.
+  api("/api/answer", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       problemId: state.problem.id,
       answer: el("answerBox").value,
     }),
-  });
+  }).catch(() => {});
+
   const note = el("savedNote");
   note.textContent = "Saved ✓";
   note.classList.add("show");
@@ -92,31 +145,63 @@ async function saveAnswer() {
 
 async function markComplete() {
   if (!state.problem) return;
-  const result = await api("/api/complete", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ problemId: state.problem.id }),
-  });
-  el("streak").textContent = result.streak;
-  el("solved").textContent = result.totalSolved;
+  const todayKey = new Date().toISOString().slice(0, 10);
+  const progress = loadLocalProgress();
+  progress.completed[todayKey] = state.problem.id;
+  progress.answers[state.problem.id] = el("answerBox").value;
+
+  // Upsert into history (avoid duplicates for the same date).
+  const existingIdx = (progress.history || []).findIndex((h) => h.date === todayKey);
+  const entry = {
+    date: todayKey,
+    problemId: state.problem.id,
+    title: state.problem.title,
+    category: state.problem.category,
+    answer: el("answerBox").value,
+  };
+  if (existingIdx >= 0) {
+    progress.history[existingIdx] = entry;
+  } else {
+    progress.history = [entry, ...(progress.history || [])];
+  }
+  saveLocalProgress(progress);
+
+  const streak = computeLocalStreak(Object.keys(progress.completed));
+  el("streak").textContent = streak;
+  el("solved").textContent = Object.keys(progress.completed).length;
 
   const btn = el("completeBtn");
   btn.textContent = "✅ Solved today";
   btn.classList.add("completeBtn-done");
   btn.disabled = true;
+
+  // Best-effort server sync for local dev.
+  api("/api/complete", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ problemId: state.problem.id }),
+  }).catch(() => {});
 }
 
 async function loadToday() {
   const data = await api("/api/today");
+  const progress = loadLocalProgress();
+  const todayKey = data.date;
+
+  const completedToday = todayKey in progress.completed;
+  const savedAnswer = progress.answers[data.problem.id] || "";
+  const streak = computeLocalStreak(Object.keys(progress.completed));
+  const totalSolved = Object.keys(progress.completed).length;
+
   el("dateLabel").textContent = new Date(data.date + "T00:00:00").toLocaleDateString(
     undefined,
     { weekday: "long", month: "short", day: "numeric" }
   );
-  el("streak").textContent = data.streak;
-  el("solved").textContent = data.totalSolved;
+  el("streak").textContent = streak;
+  el("solved").textContent = totalSolved;
   renderProblem(data.problem, {
-    savedAnswer: data.savedAnswer,
-    completedToday: data.completedToday,
+    savedAnswer,
+    completedToday,
   });
 }
 
@@ -128,14 +213,16 @@ async function loadBonus() {
 }
 
 async function openHistory() {
-  const data = await api("/api/history");
+  const progress = loadLocalProgress();
   const list = el("historyList");
   list.innerHTML = "";
 
-  if (!data.history.length) {
+  const history = (progress.history || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+
+  if (!history.length) {
     list.innerHTML = '<p class="history-empty">No solved problems yet. Solve today\'s to start your streak! 🔥</p>';
   } else {
-    for (const item of data.history) {
+    for (const item of history) {
       const div = document.createElement("div");
       div.className = "history-item";
       const dateText = new Date(item.date + "T00:00:00").toLocaleDateString();
