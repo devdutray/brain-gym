@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧠 Brain Gym — Daily Problem Solving</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">🧠</span>
+        <div>
+          <h1>Brain Gym</h1>
+          <p class="tagline">One problem a day to keep your mind sharp</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-value" id="streak">0</span>
+          <span class="stat-label">🔥 day streak</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="solved">0</span>
+          <span class="stat-label">✅ solved</span>
+        </div>
+        <button id="historyBtn" class="ghost-btn">📜 History</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="problemCard" class="card">
+        <div class="card-head">
+          <div class="badges">
+            <span class="badge" id="categoryBadge">…</span>
+            <span class="difficulty" id="difficultyBadge"></span>
+          </div>
+          <span class="date" id="dateLabel"></span>
+        </div>
+
+        <h2 id="problemTitle">Loading today's challenge…</h2>
+        <p class="prompt" id="problemPrompt"></p>
+
+        <div class="answer-block">
+          <label for="answerBox">✍️ Your thinking (saved locally):</label>
+          <textarea id="answerBox" placeholder="Brainstorm here before revealing hints or the approach. Write your reasoning, sketch options, list assumptions…"></textarea>
+          <div class="answer-actions">
+            <button id="saveBtn" class="primary-btn">💾 Save answer</button>
+            <span class="saved-note" id="savedNote"></span>
+          </div>
+        </div>
+
+        <div class="reveal-controls">
+          <button id="hintBtn" class="secondary-btn">💡 Reveal a hint</button>
+          <button id="solutionBtn" class="secondary-btn">🔓 Show approach</button>
+          <button id="completeBtn" class="primary-btn">✅ Mark solved</button>
+        </div>
+
+        <div id="hintsArea" class="reveal-area hidden">
+          <h3>Hints</h3>
+          <ol id="hintsList"></ol>
+        </div>
+
+        <div id="solutionArea" class="reveal-area hidden">
+          <h3>A way to approach it</h3>
+          <p id="solutionText"></p>
+          <div class="takeaway">
+            <strong>🎯 Thinking-skill takeaway</strong>
+            <p id="reflectionText"></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="bonus-row">
+        <button id="bonusBtn" class="ghost-btn">🎲 Give me a bonus problem</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Your answers and streak stay on your machine. Keep showing up — small daily reps compound.</p>
+    </footer>
+  </div>
+
+  <!-- History drawer -->
+  <div id="historyOverlay" class="overlay hidden">
+    <div class="drawer">
+      <div class="drawer-head">
+        <h2>📜 Your solved problems</h2>
+        <button id="closeHistory" class="ghost-btn">✕</button>
+      </div>
+      <div id="historyList" class="history-list"></div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

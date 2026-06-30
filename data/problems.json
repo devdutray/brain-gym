@@ -1,0 +1,520 @@
+[
+  {
+    "id": "ev-01",
+    "category": "everyday",
+    "difficulty": 1,
+    "title": "The Overlapping Errands",
+    "prompt": "You have 5 errands on a Saturday: groceries, post office (closes at 1pm), car wash, returning a library book (closes at 5pm), and picking up a friend from the airport at 3pm sharp. The post office and library are next to each other across town; groceries and the car wash are near home. How do you sequence the day to waste the least time and miss nothing?",
+    "hints": [
+      "List the hard time constraints first, then fit the flexible tasks around them.",
+      "Group tasks by location to avoid crossing town twice.",
+      "Work backwards from the 3pm airport pickup — it splits your day."
+    ],
+    "approach": "Anchor on fixed constraints: post office (<1pm) and airport (3pm) are the rigid pins. Do the across-town cluster in the morning (post office + library together, even though the library closes later — batching by location beats batching by deadline). Then return home-side for groceries/car wash, leaving a buffer before the 3pm pickup. The library's late closing is a red herring designed to tempt you into a second cross-town trip.",
+    "reflection": "Constraint-first scheduling: solve for the immovable constraints, then optimize the flexible ones around them. Distinguish a real deadline from a distracting one."
+  },
+  {
+    "id": "ev-02",
+    "category": "everyday",
+    "difficulty": 2,
+    "title": "Splitting the Dinner Bill Fairly",
+    "prompt": "Four friends go to dinner. Two shared a $40 bottle of wine; one drank nothing. Two ordered $30 mains, two ordered $18 mains. Tax is 10%, and you want to leave a 20% tip. Design a fair split rule that everyone would agree is reasonable — and that you could reuse every time.",
+    "hints": [
+      "Separate shared items from individual items before doing any math.",
+      "Should tax and tip be split evenly, or proportionally to what each person consumed?",
+      "A 'fair' rule is one that's simple enough to state out loud at the table."
+    ],
+    "approach": "Each person pays for their own main; the wine is split only between the two who drank it. Apply tax and tip proportionally to each person's subtotal (not evenly), because a 20% tip on a $30 meal differs from one on an $18 meal. The reusable rule: 'You pay for what you ordered, plus your share of anything shared, plus the same percentage uplift for tax+tip.' It scales to any group.",
+    "reflection": "Designing a repeatable rule beats solving the one-off. A good policy is fair, simple to explain, and generalizes."
+  },
+  {
+    "id": "ev-03",
+    "category": "everyday",
+    "difficulty": 2,
+    "title": "The Two-Day Power Outage",
+    "prompt": "A storm warning says your area may lose power for up to 48 hours starting tonight. You have a full fridge/freezer, electric stove, phones at 60%, a gas car, and one camping cooler. With ~3 hours before the storm, what do you do to minimize spoilage, stay connected, and stay comfortable?",
+    "hints": [
+      "What loses value fastest if it warms up?",
+      "A car is also a power bank and a climate-controlled room.",
+      "Pre-positioning beats reacting — what can you do now that's impossible later?"
+    ],
+    "approach": "Prioritize by spoilage rate and reversibility: freeze water bottles now (cold reserve + drinking water), cook the most perishable fridge food into meals that keep, and keep freezer/fridge doors shut (a full freezer holds ~48h closed). Charge every device and power bank now; the car can recharge phones later. Fill the cooler from the fridge with the items you'll actually use first so you don't open the fridge. Comfort is last because it's the most reversible.",
+    "reflection": "Triage by rate-of-loss and reversibility. Act now on the irreversible, defer the recoverable."
+  },
+  {
+    "id": "ev-04",
+    "category": "everyday",
+    "difficulty": 1,
+    "title": "The Crowded Calendar",
+    "prompt": "Your manager asks you to take on a new task 'as soon as possible.' You already have three commitments due this week. How do you decide what to do, and how do you respond to your manager in a way that builds trust rather than just saying yes or no?",
+    "hints": [
+      "'As soon as possible' is not a deadline — clarify it.",
+      "Make the trade-off visible instead of silently absorbing it.",
+      "Offer options, not just problems."
+    ],
+    "approach": "Don't accept or refuse blindly. Surface your current load and ask the manager to help prioritize: 'I can start this today if X slips to Friday, or I can finish X first and start this tomorrow afternoon — which do you prefer?' This converts a hidden trade-off into a shared decision. Trust comes from transparency and offering choices, not from heroics or pushback.",
+    "reflection": "Make trade-offs explicit and let the right person own the priority call. Negotiate scope, not just effort."
+  },
+  {
+    "id": "ev-05",
+    "category": "everyday",
+    "difficulty": 3,
+    "title": "Moving Apartments on a Budget",
+    "prompt": "You're moving across the city in two weeks. A full-service mover costs $1,200. A truck rental is $300 but needs a day of your time plus friends. You earn $40/hour. You also have a fragile piano and a tight 4th-floor walk-up with no elevator. How do you decide, and what's your plan?",
+    "hints": [
+      "Cost isn't only money — value your time and your risk.",
+      "Some items may deserve a different decision than the bulk.",
+      "Can you mix strategies instead of choosing one extreme?"
+    ],
+    "approach": "Don't treat it as all-or-nothing. The bulk of furniture is low-risk → truck rental with friends is cheaper even after valuing your day (~$320 of time + $300 = ~$620 vs $1,200). But the piano + 4th-floor walk-up is high-risk → hire a specialist mover for that single item. A hybrid (DIY the easy 90%, pay experts for the dangerous 10%) usually beats either pure option. Factor in the cost of a dropped piano or a back injury, not just the sticker price.",
+    "reflection": "Decompose a decision by risk profile. The optimal answer is often a blend, and 'cost' must include time and risk."
+  },
+  {
+    "id": "ev-06",
+    "category": "everyday",
+    "difficulty": 2,
+    "title": "The Recurring Late Meeting",
+    "prompt": "A weekly team meeting consistently starts 10 minutes late and runs 15 minutes over, eight people attending. It's been like this for months. How would you quantify the problem and design a fix that actually sticks?",
+    "hints": [
+      "Put a number on the waste before proposing a fix.",
+      "Late starts and overruns usually have different root causes.",
+      "A fix that depends on willpower won't stick; change the system."
+    ],
+    "approach": "Quantify first: 25 wasted min × 8 people × ~50 weeks ≈ 166 person-hours/year. That justifies effort. Diagnose separately: late starts are often a calendar/transition problem (back-to-back meetings) → fix by scheduling :05-past or shortening to 25-min slots. Overruns are an agenda problem → timeboxed agenda with a visible timekeeper and a 'parking lot' for tangents. Make the structure enforce the behavior so it doesn't rely on anyone remembering.",
+    "reflection": "Quantify waste to justify change, separate distinct root causes, and fix the system rather than nagging people."
+  },
+  {
+    "id": "ev-07",
+    "category": "everyday",
+    "difficulty": 2,
+    "title": "Choosing Between Two Job Offers",
+    "prompt": "Offer A: $95k, long commute, great team, slower growth. Offer B: $110k, remote, unknown team, fast-growing but chaotic startup. Salary alone doesn't decide it. Build a way to compare them that respects what actually matters to you.",
+    "hints": [
+      "List criteria first, then weight them — before looking at the offers.",
+      "Some factors compound over years; others are one-time.",
+      "Beware anchoring on the single number that's easiest to compare."
+    ],
+    "approach": "Define and weight your criteria before scoring (e.g., growth 30%, comp 25%, lifestyle 25%, team 20%) so the easy-to-measure salary doesn't dominate. Score each offer per criterion, multiply by weight, sum. Separately, sanity-check the model against your gut — if the 'losing' option feels right, your weights are probably wrong, which is itself useful information. Convert the commute into hours/year and dollars to make it comparable.",
+    "reflection": "Weighted decision matrices fight anchoring bias. When the math and the gut disagree, interrogate the weights."
+  },
+  {
+    "id": "ev-08",
+    "category": "everyday",
+    "difficulty": 1,
+    "title": "The Forgotten Password Cascade",
+    "prompt": "You're locked out of an account, the reset email goes to an old address you can't access, and that old email's recovery is tied to a phone number you've changed. How do you think your way out, and how do you prevent this knot in the future?",
+    "hints": [
+      "Map the dependency chain before pulling on any single thread.",
+      "Find the one node that, if recovered, unlocks the rest.",
+      "Prevention is about removing single points of failure."
+    ],
+    "approach": "Draw the recovery dependency graph: account → old email → old phone. Attack the root node (old email) via the provider's identity-verification path rather than fighting each downstream lock. Going forward, eliminate single points of failure: a password manager, 2+ recovery methods per critical account, and a current backup email. The fix is structural, not a one-time unlock.",
+    "reflection": "Untangle dependency chains by finding the root node. Resilience means designing out single points of failure."
+  },
+  {
+    "id": "lo-01",
+    "category": "logic",
+    "difficulty": 1,
+    "title": "The Two Ropes",
+    "prompt": "You have two ropes and a lighter. Each rope takes exactly 60 minutes to burn end to end, but they burn unevenly (half the rope might burn in 5 minutes, the rest in 55). How do you measure exactly 45 minutes?",
+    "hints": [
+      "Lighting both ends of one rope changes its total burn time.",
+      "You can light multiple ends at the same moment.",
+      "45 = 30 + 15. Can you produce a 30 and then a 15?"
+    ],
+    "approach": "Light rope A at BOTH ends and rope B at ONE end simultaneously. Rope A burns out in 30 min (two fronts meeting). At that instant, light B's other end; B had 30 min of length left, now burning from both ends → 15 more minutes. Total 30 + 15 = 45 minutes. The trick is that uneven burning doesn't matter when you burn from both ends — the time halves regardless.",
+    "reflection": "Reframe the resource: 'burn time' is the unit, not 'length.' Lighting both ends is a transformation that sidesteps the uneven-burning trap."
+  },
+  {
+    "id": "lo-02",
+    "category": "logic",
+    "difficulty": 2,
+    "title": "The Mislabeled Jars",
+    "prompt": "Three jars are labeled APPLES, ORANGES, and MIXED. You're told every label is wrong. You may pull one fruit from one jar (without looking inside). How do you correctly relabel all three?",
+    "hints": [
+      "Every label being wrong is a powerful constraint — use it.",
+      "Which jar gives you the most information from a single pull?",
+      "Once you know one jar for certain, the wrongness forces the rest."
+    ],
+    "approach": "Pull from the jar labeled MIXED. Since its label is wrong, it's pure — say you draw an apple, so it's APPLES. Now the jar labeled ORANGES can't be oranges (wrong) and can't be apples (already found), so it's MIXED. The remaining jar is ORANGES. One pull resolves everything because the 'all wrong' constraint chains the deductions.",
+    "reflection": "Pick the probe that maximizes information. A strong constraint (every label wrong) turns one fact into a full solution via forced elimination."
+  },
+  {
+    "id": "lo-03",
+    "category": "logic",
+    "difficulty": 2,
+    "title": "The Bridge and Torch",
+    "prompt": "Four people must cross a bridge at night with one torch. The bridge holds at most two at a time, and the torch must travel with them. They walk at 1, 2, 7, and 10 minutes. A pair moves at the slower person's pace. What's the minimum total time to get all four across?",
+    "hints": [
+      "The naive 'fastest person escorts everyone' strategy is not optimal.",
+      "The two slowest people are the costly part — can they cross together?",
+      "Someone has to bring the torch back; minimize those return trips' cost."
+    ],
+    "approach": "17 minutes. Send 1 & 2 over (2), 1 returns (1). Send 7 & 10 over together (10), 2 returns (2). Send 1 & 2 over (2). Total = 2+1+10+2+2 = 17. The insight: pair the two slowest together so you only 'pay' for the 10 once, and use the two fastest as the torch-shuttle. Escorting everyone with person-1 would cost 19.",
+    "reflection": "Batch the expensive items together so their cost is paid once. Optimize the overhead (return trips), not just the obvious legs."
+  },
+  {
+    "id": "lo-04",
+    "category": "logic",
+    "difficulty": 3,
+    "title": "The 12 Coins",
+    "prompt": "You have 12 visually identical coins; exactly one is counterfeit and differs in weight (you don't know if it's heavier or lighter). Using a balance scale only 3 times, identify the fake AND whether it's heavy or light.",
+    "hints": [
+      "Each weighing has three outcomes — that's information you must exploit.",
+      "Don't weigh the same groups each time; let earlier results steer later weighings.",
+      "Track not just which coins, but the 'could be heavy / could be light' status of each."
+    ],
+    "approach": "Split 4-4-4. Weigh group1 vs group2. If balanced, the fake is in group3 — use remaining 2 weighings on those 4 against known-good coins to isolate it and its direction. If unbalanced, you learn which side is heavy/light, narrowing each coin to 'suspect-heavy' or 'suspect-light'; a clever second weighing that swaps some coins across the scale and adds known-good coins splits the suspects so the third weighing always isolates one. The key is that 3 weighings give 3³=27 outcomes, enough to distinguish 24 cases (12 coins × 2 directions).",
+    "reflection": "Information theory bounds the puzzle: count outcomes (3^n) against cases. Design each step so its three results partition the remaining possibilities evenly."
+  },
+  {
+    "id": "lo-05",
+    "category": "logic",
+    "difficulty": 2,
+    "title": "The Lying and Truthful Guards",
+    "prompt": "Two doors: one leads to safety, one to doom. Two guards: one always lies, one always tells the truth, but you don't know which is which. You may ask ONE guard ONE yes/no question. What do you ask to find the safe door?",
+    "hints": [
+      "You can't trust either answer directly — so don't ask about the doors directly.",
+      "Make the liar and the truth-teller produce the same answer.",
+      "Ask about what the OTHER guard would say."
+    ],
+    "approach": "Ask either guard: 'If I asked the other guard which door is safe, which would they point to?' — then choose the OPPOSITE door. The truth-teller truthfully reports the liar's lie; the liar lies about the truth-teller's truth. Either way you get the wrong door's identity, so you invert it. Embedding the other guard cancels out the unknown.",
+    "reflection": "When you can't trust a source, route the question through the system so the unknown cancels. Self-referential questions neutralize uncertainty."
+  },
+  {
+    "id": "lo-06",
+    "category": "logic",
+    "difficulty": 1,
+    "title": "The Missing Dollar",
+    "prompt": "Three guests pay $10 each ($30) for a room. The clerk realizes it's $25 and sends $5 back via a bellhop, who pockets $2 and returns $1 to each guest. Now each guest paid $9 (= $27), plus the bellhop's $2 = $29. Where's the missing dollar?",
+    "hints": [
+      "Be suspicious of the operation that adds $27 and $2.",
+      "Track where every dollar physically is.",
+      "The framing of the question is the trick, not the arithmetic."
+    ],
+    "approach": "There is no missing dollar — the question adds things that shouldn't be added. The $27 the guests paid already INCLUDES the bellhop's $2. Correct accounting: $25 (hotel) + $2 (bellhop) + $3 (refunded to guests) = $30. Adding the $2 to the $27 double-counts it. The puzzle weaponizes a misleading addition.",
+    "reflection": "Verify that an equation models reality before trusting it. Misframed arithmetic can manufacture a paradox out of nothing — follow the money, not the narration."
+  },
+  {
+    "id": "lo-07",
+    "category": "logic",
+    "difficulty": 3,
+    "title": "100 Prisoners and Light Switches",
+    "prompt": "100 prisoners; each day one random prisoner is taken to a room with a single light switch (initially off) and returned. They may flip it or not. At any point any prisoner may declare 'everyone has visited.' If correct, all go free; if wrong, all die. They can strategize once beforehand. What's the strategy?",
+    "hints": [
+      "They need to count to 100 using a one-bit shared memory.",
+      "Make one person special — a 'counter.'",
+      "Everyone else should signal exactly once."
+    ],
+    "approach": "Appoint one Counter. Rule for everyone else: the first time you enter and the light is OFF, turn it ON; otherwise leave it. Rule for the Counter: each time you find it ON, turn it OFF and add 1 to your tally; if OFF, do nothing. Each non-counter turns it on exactly once in their life, so when the Counter has switched it off 99 times, all 99 others have visited (plus the Counter) → declare. The single bit becomes a token-passing channel.",
+    "reflection": "Centralize state in one agent and use a shared one-bit channel as a token. Asymmetric roles turn an impossible-seeming coordination into a counting problem."
+  },
+  {
+    "id": "sd-01",
+    "category": "system-design",
+    "difficulty": 2,
+    "title": "Design a URL Shortener",
+    "prompt": "Design a service like bit.ly: given a long URL, return a short code; visiting the short code redirects to the original. Expect 100M URLs and heavy read traffic. Sketch the key components, the data model, and how you generate codes.",
+    "hints": [
+      "Reads vastly outnumber writes — design for that asymmetry.",
+      "How do you generate a short, unique, collision-free code?",
+      "Where does caching help most?"
+    ],
+    "approach": "Core: an API layer, a key-generation strategy, a datastore (key→long URL), and a cache. Generate codes by base62-encoding an auto-incrementing ID (guaranteed unique, ~7 chars covers trillions) or a pre-generated key pool to avoid hotspots. Store mappings in a fast KV store. Since reads dominate, put a cache (e.g., the hot 20% of links) in front and use a CDN/edge for redirects. Add analytics asynchronously so it never blocks the redirect path.",
+    "reflection": "Design around the dominant access pattern (read-heavy → cache aggressively). Prefer deterministic, collision-free ID generation over random-with-retry."
+  },
+  {
+    "id": "sd-02",
+    "category": "system-design",
+    "difficulty": 2,
+    "title": "Rate Limiting an API",
+    "prompt": "Your public API is getting hammered — some clients send 10,000 requests/second. You want to allow each client a fair share (say 100 req/sec) and reject the rest gracefully. How do you design the rate limiter?",
+    "hints": [
+      "Per-client identity must be established before you can limit them.",
+      "Consider the token-bucket vs fixed-window trade-off.",
+      "In a multi-server deployment, where does the counter live?"
+    ],
+    "approach": "Identify clients by API key/IP. Use a token-bucket algorithm: each client has a bucket refilling at 100 tokens/sec, capped at a burst size; each request consumes a token, and an empty bucket → HTTP 429 with a Retry-After header. Token bucket allows short bursts while enforcing the average, unlike a rigid fixed window (which has boundary-spike problems). For multiple servers, store counters in a shared fast store (e.g., Redis) so the limit is global, not per-instance. Fail open or closed deliberately based on risk.",
+    "reflection": "Choose the algorithm that matches desired behavior (bursts vs strictness). Distributed limits need shared state; always return actionable rejection responses."
+  },
+  {
+    "id": "sd-03",
+    "category": "system-design",
+    "difficulty": 3,
+    "title": "Idempotent Payment Processing",
+    "prompt": "A user clicks 'Pay' and the network hiccups, so the client retries. You must never charge them twice, even if the same request arrives multiple times across distributed servers. How do you guarantee exactly-once payment?",
+    "hints": [
+      "The client must give you a way to recognize a duplicate.",
+      "A database constraint can enforce uniqueness atomically.",
+      "Think about the window between 'charge succeeded' and 'response lost.'"
+    ],
+    "approach": "Require an idempotency key generated by the client per payment attempt and sent with every retry. On the server, atomically insert that key into a unique-constrained table before charging; if the insert fails (key exists), return the stored result of the original attempt instead of charging again. Record the outcome against the key so retries replay the same response. This closes the dangerous gap where the charge succeeded but the response was lost. Use a DB transaction or a distributed lock so concurrent retries don't both pass the check.",
+    "reflection": "Idempotency keys + an atomic uniqueness check turn 'at-least-once' delivery into 'exactly-once' effects. Design for retries as the normal case, not the exception."
+  },
+  {
+    "id": "sd-04",
+    "category": "system-design",
+    "difficulty": 2,
+    "title": "The Notification Fan-Out",
+    "prompt": "A celebrity with 50 million followers posts. Every follower should see it in their feed. Doing 50M database writes synchronously would melt your system. How do you design the fan-out?",
+    "hints": [
+      "Should you push the post to all followers, or let them pull it?",
+      "Celebrity accounts behave very differently from normal accounts.",
+      "A hybrid can give you the best of both."
+    ],
+    "approach": "Pure push (write to 50M feeds) is too expensive for celebrities; pure pull (every reader queries all the people they follow at read time) is too slow for normal feeds. Use a hybrid: push for normal accounts (fan-out on write), but for high-follower 'celebrity' accounts, store the post once and merge it in at read time (fan-out on read). Do the writes asynchronously through a queue so the post returns instantly. This bounds both write amplification and read latency.",
+    "reflection": "When one strategy breaks at the extremes, segment by the variable that causes the break (follower count) and apply different strategies per segment."
+  },
+  {
+    "id": "sd-05",
+    "category": "system-design",
+    "difficulty": 1,
+    "title": "Caching the Right Thing",
+    "prompt": "A page is slow because it recomputes the same expensive report for every visitor, but the underlying data only changes a few times a day. You add a cache and it helps — until users complain they see stale numbers after an update. How do you fix it properly?",
+    "hints": [
+      "Caching is easy; invalidation is the hard part.",
+      "What event should trigger a refresh?",
+      "Consider TTL vs event-based invalidation trade-offs."
+    ],
+    "approach": "Invalidate on the write that changes the data: when the underlying report data updates, evict or refresh the cached entry (event-based invalidation) so readers never see stale numbers. If event hooks are hard, a short TTL bounds staleness as a fallback. Best is a combination: cache aggressively, invalidate on known update events, and keep a modest TTL as a safety net. Surface a 'last updated' timestamp so staleness is visible, not silent.",
+    "reflection": "'There are only two hard problems: cache invalidation and naming things.' Tie cache lifetime to the events that actually change the data, not just a timer."
+  },
+  {
+    "id": "sd-06",
+    "category": "system-design",
+    "difficulty": 3,
+    "title": "Designing for Graceful Degradation",
+    "prompt": "Your app depends on a third-party recommendation service that occasionally goes down or gets slow. Right now, when it hangs, your whole product page hangs with it. Redesign so a flaky dependency can't take down your core experience.",
+    "hints": [
+      "A slow dependency is often worse than a failed one — why?",
+      "What should the user see when recommendations are unavailable?",
+      "Isolate the failure so it can't cascade."
+    ],
+    "approach": "Treat the dependency as optional. Add a timeout so a slow call fails fast instead of hanging the page. Wrap it in a circuit breaker that stops calling a known-down service and trips to a fallback (e.g., generic 'popular items' or simply hiding the section). Render the core page first and load recommendations asynchronously so they can fail independently. Bulkhead the resources (separate thread pool/connection limits) so the dependency's slowness can't exhaust your servers and cascade.",
+    "reflection": "Hard dependencies on soft features create fragility. Timeouts, circuit breakers, fallbacks, and bulkheads contain failures so non-critical parts degrade gracefully instead of taking everything down."
+  },
+  {
+    "id": "es-01",
+    "category": "estimation",
+    "difficulty": 1,
+    "title": "Piano Tuners in Chicago",
+    "prompt": "The classic Fermi problem: roughly how many piano tuners work in Chicago? You have no reference data — reason your way to an order-of-magnitude estimate and state your assumptions.",
+    "hints": [
+      "Break it into a chain of estimates you can each guess within 10x.",
+      "Population → households → pianos → tunings/year → work one tuner can do.",
+      "The goal is the right order of magnitude, not precision."
+    ],
+    "approach": "Chain estimates: ~3M people, ~2.5 people/household → ~1.2M households. Say 1 in 20 owns a piano → ~60k pianos, plus schools/venues round it up. Each tuned ~once/year → ~60k tunings/year. A tuner does ~4 tunings/day × ~250 days ≈ 1,000/year. So ~60k / 1,000 ≈ 50–60 tuners. The actual number is in that ballpark — the method matters more than the answer.",
+    "reflection": "Decompose an unknowable number into a product of guessable factors. Errors partially cancel, landing you within an order of magnitude — enough to make decisions."
+  },
+  {
+    "id": "es-02",
+    "category": "estimation",
+    "difficulty": 2,
+    "title": "Data Center Power Bill",
+    "prompt": "Estimate the monthly electricity cost of a small data center running 1,000 servers. No looking anything up — reason from rough physical quantities and state your assumptions.",
+    "hints": [
+      "How many watts does one server draw, roughly?",
+      "Don't forget cooling overhead — it's not free.",
+      "Convert watts → kWh/month → dollars."
+    ],
+    "approach": "Assume ~300W per server → 1,000 servers = 300 kW. Add cooling/overhead via a PUE of ~1.5 → ~450 kW total. Monthly: 450 kW × 24h × 30 days ≈ 324,000 kWh. At ~$0.12/kWh → ~$39,000/month. State assumptions clearly; varying server wattage or electricity price shifts it, but you've bounded it to tens of thousands of dollars, which is decision-useful.",
+    "reflection": "Always include the 'hidden multiplier' (cooling overhead / PUE). Stating assumptions makes an estimate auditable and easy to refine."
+  },
+  {
+    "id": "es-03",
+    "category": "estimation",
+    "difficulty": 2,
+    "title": "How Much Coffee Does Your City Drink?",
+    "prompt": "Estimate how many cups of coffee are consumed daily in a city of 1 million people. Then use it to estimate how many coffee shops the city can support. State assumptions.",
+    "hints": [
+      "Not everyone drinks coffee; some drink several cups.",
+      "Estimate total cups, then how many cups one shop serves per day.",
+      "Cross-check the shop count against your intuition for the city."
+    ],
+    "approach": "Say 50% drink coffee, averaging 1.5 cups/day → ~750k cups/day. Suppose ~40% is bought out (rest home-brewed) → ~300k purchased cups/day. A busy café serves maybe ~500 cups/day → ~600 coffee shops citywide. Cross-check: that's ~1 shop per 1,700 people, which feels plausible for a coffee-loving city. If it felt absurd, you'd revisit an assumption.",
+    "reflection": "Estimation chains let you derive a second quantity (shops) from the first (cups). Always cross-check the result against intuition to catch a bad assumption."
+  },
+  {
+    "id": "es-04",
+    "category": "estimation",
+    "difficulty": 3,
+    "title": "Sizing a Feature's Storage Cost",
+    "prompt": "Your product wants to let every user upload a profile photo and store a 30-day history of edits. You have 10 million users. Estimate the storage you'll need and the rough monthly cloud cost. State assumptions.",
+    "hints": [
+      "Estimate average file size after compression, not raw camera size.",
+      "How many versions per user actually accumulate?",
+      "Storage cost is per-GB-month; don't forget redundancy/backups."
+    ],
+    "approach": "Assume ~200 KB per compressed profile photo. If users edit rarely, average ~3 retained versions in 30 days → ~600 KB/user. 10M users → ~6 TB. With redundancy/backups (~2x) → ~12 TB. At ~$0.02/GB-month → ~$240/month for storage, plus bandwidth for serving (often the larger cost). The estimate flags that egress, not storage, may dominate — a useful design signal.",
+    "reflection": "Order-of-magnitude sizing early prevents nasty surprises. The estimate's real value is revealing which cost component dominates so you design for it."
+  },
+  {
+    "id": "es-05",
+    "category": "estimation",
+    "difficulty": 1,
+    "title": "Time to Read the Internet",
+    "prompt": "Playfully estimate: if you read non-stop, how long would it take to read every English Wikipedia article? State your assumptions and reasoning.",
+    "hints": [
+      "Estimate number of articles and average length.",
+      "Estimate your reading speed in words per minute.",
+      "Convert to a human-relatable unit (years, lifetimes)."
+    ],
+    "approach": "Say ~6M English articles averaging ~600 words → ~3.6 billion words. Reading at ~250 wpm non-stop → ~14.4M minutes ≈ 240,000 hours ≈ 27 years of continuous reading (no sleep). With a realistic ~4 reading-hours/day it balloons to ~160 years — i.e., multiple lifetimes. The point is converting an abstract 'a lot' into a tangible human scale.",
+    "reflection": "Translate huge numbers into human-relatable units (lifetimes, years). Estimation makes the incomprehensible graspable and supports better intuition."
+  },
+  {
+    "id": "cr-01",
+    "category": "creative",
+    "difficulty": 1,
+    "title": "50 Uses for a Paperclip",
+    "prompt": "In the next few minutes, generate as many distinct uses for a paperclip as you can — aim past the obvious. Then review your list: which ideas came from breaking an assumption about what a paperclip 'is'?",
+    "hints": [
+      "Quantity first, judgment later — don't filter while generating.",
+      "Vary the attribute you exploit: shape, material, size, springiness.",
+      "Try absurd ideas; they unlock adjacent useful ones."
+    ],
+    "approach": "Defer judgment and chase volume (the core of divergent thinking). Systematically vary attributes: as wire (reset-button poker, zipper pull, SIM ejector), as metal (circuit jumper, fishing hook), as shape (bookmark, hair pin, lock pick), reimagined (chain link, art sculpture, game token). The richest ideas appear once you stop treating it as 'a thing that holds paper' and start treating it as 'a small bendable conductive wire.'",
+    "reflection": "Divergent thinking = separate idea generation from evaluation. Breakthroughs come from redefining the object by its attributes, not its label."
+  },
+  {
+    "id": "cr-02",
+    "category": "creative",
+    "difficulty": 2,
+    "title": "Redesign the Umbrella",
+    "prompt": "The umbrella has barely changed in centuries — it still flips inside-out, drips indoors, and gets left behind. Brainstorm genuinely new approaches to 'keeping a person dry while moving.' Push beyond a 'better umbrella.'",
+    "hints": [
+      "Attack the job-to-be-done ('stay dry'), not the existing product.",
+      "List the umbrella's failure modes — each is an opportunity.",
+      "Borrow solutions from unrelated domains (clothing, cars, physics)."
+    ],
+    "approach": "Reframe from 'umbrella' to the job 'keep a moving person dry.' Inventory failure modes (wind-flip, dripping, forgetting, one-handed) and ideate against each. Borrow across domains: hydrophobic coatings from materials science (so nothing drips), air-curtain blowers from store entrances, wearable/packable rain shells from outdoor gear, car-windshield principles for a personal canopy. The breakthrough comes from solving the job rather than iterating the artifact.",
+    "reflection": "Focus on the job-to-be-done, not the incumbent product. Cross-domain analogy is a reliable engine for genuinely novel solutions."
+  },
+  {
+    "id": "cr-03",
+    "category": "creative",
+    "difficulty": 2,
+    "title": "The Constraint Flip",
+    "prompt": "Pick a frustrating constraint in your daily work (e.g., 'too many meetings,' 'slow approvals,' 'legacy code'). Now imagine the constraint were 10x worse. What creative solutions would that force? Then bring one back to today.",
+    "hints": [
+      "Exaggerating a constraint exposes assumptions you take for granted.",
+      "What would you be forced to automate, eliminate, or batch?",
+      "A solution born under extreme constraints often improves the normal case."
+    ],
+    "approach": "Amplify the constraint to absurdity (e.g., 'only 1 meeting allowed per month'). That forces radical responses: async-by-default communication, ruthless agendas, written decisions, delegating authority. Then scale the idea back: even at today's meeting load, async updates and pre-reads would help. Extreme constraints strip away 'the way we've always done it' and reveal that many habits are optional, not necessary.",
+    "reflection": "Exaggerating constraints is a creativity tool: it surfaces hidden assumptions and forces order-of-magnitude solutions, the best of which improve the everyday case."
+  },
+  {
+    "id": "cr-04",
+    "category": "creative",
+    "difficulty": 3,
+    "title": "Combine Two Unrelated Things",
+    "prompt": "Pick two random unrelated objects or services (e.g., 'a library' + 'a gym,' or 'email' + 'a board game'). Invent a genuinely useful product or service that fuses them. Then articulate why the combination creates value neither has alone.",
+    "hints": [
+      "Forced combination is a deliberate idea-generation technique.",
+      "Look for a real human need that lives at the intersection.",
+      "Ask what each side contributes that the other lacks."
+    ],
+    "approach": "Use forced association: list each thing's core value, then find a need at the overlap. 'Library + gym' → a space where you exercise while audiobooks/courses play, rewarding mental and physical effort together (value: habit-stacking two goals people struggle to find time for). The discipline is to justify the fusion with a real need and a complementary contribution from each side, not novelty for its own sake.",
+    "reflection": "Forced combination manufactures innovation on demand. Value emerges when each component supplies what the other lacks and they meet a real need at the intersection."
+  },
+  {
+    "id": "cr-05",
+    "category": "creative",
+    "difficulty": 2,
+    "title": "Explain It to a Five-Year-Old",
+    "prompt": "Take something complex you work with (an API, a database index, the cloud, your job). Explain it so a curious five-year-old genuinely understands. Then notice: did simplifying it reveal anything you didn't fully understand yourself?",
+    "hints": [
+      "Use analogies to things a child already knows.",
+      "Strip jargon entirely — if you can't, you may not fully get it.",
+      "The gaps where the analogy breaks are where your understanding is thin."
+    ],
+    "approach": "Map the concept onto a child's world: a database index is 'the little tabs in a picture book so you flip straight to the dinosaur page instead of checking every page'; the cloud is 'someone else's giant computer you borrow over the internet.' The act of simplifying (the Feynman technique) exposes the spots where your analogy strains — those are precisely the parts you understand least and should go re-learn.",
+    "reflection": "The Feynman technique: teaching simply reveals the holes in your own understanding. Clarity for others is a diagnostic for your own mastery."
+  },
+  {
+    "id": "cr-06",
+    "category": "creative",
+    "difficulty": 3,
+    "title": "Invert the Problem",
+    "prompt": "Take a goal you have ('be more productive,' 'build a reliable system,' 'have a good team'). Instead of asking how to achieve it, ask: 'How would I guarantee the OPPOSITE?' List ways to fail, then invert them into actions.",
+    "hints": [
+      "Inversion (thinking backwards) often surfaces insights forward-thinking misses.",
+      "It's frequently easier to list how to fail than how to succeed.",
+      "Each failure mode you name becomes a thing to avoid or prevent."
+    ],
+    "approach": "Apply inversion: to 'build a reliable system,' ask how to guarantee unreliability — no monitoring, no tests, single points of failure, deploy on Fridays with no rollback, ignore alerts. Each item, inverted, becomes a concrete reliability practice (add monitoring, test, remove SPOFs, safe deploys, act on alerts). Listing failure modes is often easier and more complete than brainstorming success directly, and it surfaces risks you'd otherwise miss.",
+    "reflection": "Inversion ('invert, always invert') is a powerful thinking tool: defining and avoiding failure is often a clearer path to success than chasing success directly."
+  },
+  {
+    "id": "ev-09",
+    "category": "everyday",
+    "difficulty": 2,
+    "title": "The Subscription Audit",
+    "prompt": "You suspect you're leaking money on subscriptions you forgot about — streaming, apps, cloud storage, a gym. You don't even have a full list. Design a repeatable process to find them all, decide which to cut, and prevent the leak from recurring.",
+    "hints": [
+      "You can't manage what you can't see — start by surfacing the full list.",
+      "Where's the single source of truth for recurring charges?",
+      "Cutting once doesn't prevent it from happening again."
+    ],
+    "approach": "Find them at the source: scan 2–3 months of bank/card statements for recurring charges (the ground truth), not memory. For each, apply a simple test: 'Have I used this in 30 days, and would I re-subscribe today at full price?' Cut the no's. Prevent recurrence by routing all subscriptions to one card you review monthly, and set a recurring calendar reminder for the audit. The fix is a standing process, not a one-time purge.",
+    "reflection": "Audit from the source of truth, not memory. Turn a one-time cleanup into a recurring process so the problem can't silently regrow."
+  },
+  {
+    "id": "sd-07",
+    "category": "system-design",
+    "difficulty": 2,
+    "title": "The Search Box Autocomplete",
+    "prompt": "You need to add 'type-ahead' search suggestions that appear as the user types each letter, fast enough to feel instant, across millions of possible terms. How do you design it so it's both quick and relevant?",
+    "hints": [
+      "Querying the full database on every keystroke won't scale.",
+      "What data structure is built for prefix lookups?",
+      "Relevance (popularity) matters as much as matching."
+    ],
+    "approach": "Use a prefix tree (trie) or a prefix-indexed store so each keystroke does a cheap prefix lookup instead of a full search. Precompute and cache the top-N most popular completions per prefix (ranked by query frequency) so results are both fast and relevant. Debounce keystrokes on the client and serve from an in-memory cache/edge to hit sub-100ms latency. Update popularity rankings asynchronously in the background, not on the request path.",
+    "reflection": "Match the data structure to the access pattern (prefix lookups → trie). Precomputation and caching trade cheap storage for the low latency that makes a feature feel instant."
+  },
+  {
+    "id": "lo-08",
+    "category": "logic",
+    "difficulty": 2,
+    "title": "The Poisoned Wine",
+    "prompt": "A king has 1,000 bottles of wine; exactly one is poisoned and kills within 24 hours. He has 10 prisoners to taste-test and needs to find the poisoned bottle in a single 24-hour round. How does he do it?",
+    "hints": [
+      "10 prisoners, each either lives or dies — that's 10 bits of information.",
+      "How many distinct outcomes can 10 yes/no results encode?",
+      "Number the bottles in binary."
+    ],
+    "approach": "Number bottles 0–999 in binary (10 bits, since 2^10 = 1024 ≥ 1000). Assign each prisoner to one bit position; prisoner i drinks from every bottle whose i-th binary digit is 1. After 24 hours, the pattern of who died spells out the poisoned bottle's number in binary (died = 1, lived = 0). Ten prisoners encode 1,024 possibilities — enough to pinpoint one bottle in a single round.",
+    "reflection": "Binary encoding packs maximum information into minimal tests: n yes/no probes distinguish 2^n cases. Recognizing a problem as 'identify one of N' signals a logarithmic solution."
+  },
+  {
+    "id": "ev-10",
+    "category": "everyday",
+    "difficulty": 3,
+    "title": "The Group Trip Planner",
+    "prompt": "Six friends want to take a weekend trip together, but they have different budgets, conflicting date preferences, and one is vegetarian while another wants nightlife. Every attempt to plan it has stalled in the group chat for weeks. How do you actually get it decided?",
+    "hints": [
+      "Endless open discussion is the problem — change the decision process.",
+      "Separate gathering preferences from making the choice.",
+      "Constraints and a deadline force convergence."
+    ],
+    "approach": "Replace open-ended chat with a structured decision: first collect hard constraints privately (max budget, impossible dates, dealbreakers) so the real feasible set is visible. Narrow to 2–3 concrete options that fit everyone's constraints, then put them to a quick vote with a deadline. Appoint a single decider/organizer to break ties and own logistics. Group chats stall because they conflate brainstorming, constraint-gathering, and deciding — separating those phases unblocks it.",
+    "reflection": "Group decisions stall when discussion, constraints, and choice are tangled. Separate the phases, surface constraints early, time-box the vote, and give one person decision authority."
+  },
+  {
+    "id": "cr-07",
+    "category": "creative",
+    "difficulty": 2,
+    "title": "The Pre-Mortem",
+    "prompt": "Imagine a project you care about has spectacularly failed six months from now. Before starting it, write the story of HOW it failed. What does imagining the failure in vivid detail let you see that optimistic planning hides?",
+    "hints": [
+      "Assume failure as a certainty, then explain it — don't hedge.",
+      "Vivid, specific failure stories beat vague risk lists.",
+      "Each cause you imagine is a risk you can now pre-empt."
+    ],
+    "approach": "Run a pre-mortem: stand in the future, declare the project failed, and narrate the causes concretely (scope crept, a key person left, the integration nobody owned broke, users never adopted it). Assuming failure as fact frees people to voice doubts that optimism suppresses. Convert each imagined cause into a present-day mitigation or an early-warning signal. It's inversion applied to planning — and it surfaces risks a normal 'what could go wrong?' rarely does.",
+    "reflection": "Prospective hindsight (the pre-mortem) bypasses optimism bias by treating failure as given. Imagining failure vividly reveals risks that forward, hopeful planning hides."
+  }
+]
